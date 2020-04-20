@@ -6,7 +6,7 @@ from kivy.uix.screenmanager import Screen, ScreenManager
 class WindowManager(ScreenManager):
     pass
 
-class MainWondow(Screen):
+class MainWindow(Screen):
     pass
 
 class SecondWindow(Screen):

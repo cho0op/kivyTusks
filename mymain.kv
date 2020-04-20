@@ -1,5 +1,5 @@
 WindowManager:
-    MainWondow:
+    MainWindow:
     SecondWindow:
 
 <MainWindow>:
@@ -16,7 +16,8 @@ WindowManager:
         Button:
             text:"submit"
             on_release:
-                app.root.current="second"
+                app.root.current="second" if password.text== "pass" else "main"
+                root.manager.transition.direction="left"
 
 
 <SecondWindow>:
@@ -25,3 +26,4 @@ WindowManager:
         text: "go back"
         on_release:
             app.root.current="main"
+            root.manager.transition.direction="right"
